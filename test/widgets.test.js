@@ -1,7 +1,6 @@
-const test = require("node:test");
+﻿const test = require("node:test");
 const assert = require("node:assert/strict");
 const request = require("supertest");
-const jwt = require("jsonwebtoken");
 
 const app = require("../src/server");
 const pool = require("../src/db/pool");
