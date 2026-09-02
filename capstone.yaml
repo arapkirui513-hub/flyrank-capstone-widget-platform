@@ -1,0 +1,59 @@
+﻿run: npm start
+seed: npm run db:migrate
+base_url: http://localhost:3000
+
+test:
+  command: node --test .\test\*.test.js
+
+endpoints:
+  - name: health
+    method: GET
+    path: /health
+
+  - name: register
+    method: POST
+    path: /api/auth/register
+
+  - name: login
+    method: POST
+    path: /api/auth/login
+
+  - name: create_widget
+    method: POST
+    path: /api/widgets
+
+  - name: list_widgets
+    method: GET
+    path: /api/widgets
+
+  - name: get_widget
+    method: GET
+    path: /api/widgets/:id
+
+  - name: update_widget
+    method: PUT
+    path: /api/widgets/:id
+
+  - name: delete_widget
+    method: DELETE
+    path: /api/widgets/:id
+
+  - name: embed_snippet
+    method: GET
+    path: /api/widgets/:id/embed
+
+  - name: widget_config
+    method: GET
+    path: /api/widget-config/:id
+
+  - name: widget_delivery
+    method: GET
+    path: /widget.js
+
+  - name: submit
+    method: POST
+    path: /api/submissions
+
+  - name: dashboard
+    method: GET
+    path: /api/dashboard
