@@ -1,5 +1,7 @@
 ﻿# Embeddable Widget & Lead-Capture Platform
 
+> **Status:** Internship / Capstone
+
 A multi-tenant platform for creating embeddable lead-capture widgets, serving them to external websites, collecting submissions, optional geolocation enrichment, and tenant-scoped dashboard data.
 
 This Week 4 capstone demonstrates API design, multi-tenancy, embeddable frontend delivery, validation, CORS, rate limiting, fallback behavior, safe side effects, and evidence-driven verification.
